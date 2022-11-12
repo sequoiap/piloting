@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: PHAK (but shorter)
+  chapters:
+  - file: content/phak/index
+- caption: Written
+  chapters:
+  - file: content/written/index
+- caption: Oral
+  chapters:
+  - file: content/oral/index
+- caption: Checkride
+  chapters:
+  - file: content/checkride/index
