@@ -13,6 +13,21 @@ parts:
 - caption: Oral
   chapters:
   - file: content/oral/index
+  - file: content/oral/endorsements
+  - file: content/oral/qualifications
+  - file: content/oral/humanfactors
+  - file: content/oral/night
+  - file: content/oral/airworthiness
+  - file: content/oral/systems
+  - file: content/oral/aerodynamics
+  - file: content/oral/weather
+  - file: content/oral/weatherinfo
+  - file: content/oral/airportops
+  - file: content/oral/airspace
+  - file: content/oral/performance
+  - file: content/oral/navigation
+  - file: content/oral/adm
+  - file: content/oral/regulations
 - caption: Checkride
   chapters:
   - file: content/checkride/index
