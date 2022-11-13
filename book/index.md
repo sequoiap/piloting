@@ -25,3 +25,14 @@ Sequoia
 
 ```{tableofcontents}
 ```
+
+```{note}
+I mean no copyright infringement! Since this summarizes the PHAK, available for
+free [online](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak), 
+some sentences are taken directly from the bookk. As this is not a for-profit
+project, but an open-source resource, borrowed snippets are used under fair 
+use.
+
+This project is licensed under the GPLv3. That means none of this work may be
+reproduced in any closed-source work. Learn more [here](https://www.gnu.org/licenses/gpl-3.0.en.html).
+```

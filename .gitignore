@@ -128,3 +128,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Dev environment
+*/.vscode/
+.DS_Store

@@ -2,11 +2,27 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: index
 parts:
 - caption: PHAK (but shorter)
+  numbered: true
   chapters:
-  - file: content/phak/index
+  - file: content/phak/introduction
+  - file: content/phak/adm
+  - file: content/phak/construction
+  - file: content/phak/principles
+  - file: content/phak/aerodynamics
+  - file: content/phak/controls
+  - file: content/phak/systems
+  - file: content/phak/instruments
+  - file: content/phak/documents
+  - file: content/phak/wb
+  - file: content/phak/performance
+  - file: content/phak/weathertheory
+  - file: content/phak/weatherservices
+  - file: content/phak/airportops
+  - file: content/phak/airspace
+  - file: content/phak/aeromedical
 - caption: Written
   chapters:
   - file: content/written/index
@@ -31,3 +47,7 @@ parts:
 - caption: Checkride
   chapters:
   - file: content/checkride/index
+- caption: Appendices
+  chapters:
+  - file: content/appendices/notams
+  - file: content/appendices/signsandmarkings
