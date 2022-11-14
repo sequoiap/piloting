@@ -55,4 +55,6 @@ Pilots can self-report incidents to NASA under the Aviation Safety Reporting Pro
 
 ## AIM & advisory circulars
 
+The Aeronautical Information Manual (AIM) is the FAA's official guide to basic flight information and Air traffic control (ATC) procedures. The AIM contains the basic aeronautical knowledge information required to fly in the United States National Airspace System. It also contains items of interest to pilots concerning health and medical facts, factors affecting flight safety, a pilot/controller glossary of terms used in the ATC System, and information on safety, accident, and hazard reporting ([source](https://www.faraim.org/)).
 
+Advisory circular (AC) refers to a type of publication offered by the Federal Aviation Administration (FAA) to provide guidance for compliance with airworthiness regulations, pilot certification, operational standards, training standards, and any other rules within the 14 CFR Aeronautics and Space Title. They define acceptable means, but not the only means, of accomplishing or showing compliance with airworthiness regulations.[1] Generally informative in nature, Advisory Circulars are neither binding nor regulatory; yet some have the effect of de facto standards or regulations ([source](https://en.wikipedia.org/wiki/Advisory_circular)).

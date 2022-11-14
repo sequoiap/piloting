@@ -85,6 +85,21 @@
 
 ## Hazardous attitudes
 
+1. **Anti-authority:** “Don’t tell me!”
+   Pilots with an anti-authority attitude tend to believe that rules, regulations, and safety procedures don’t apply to them. For example, an anti-authority pilot may neglect their checklists or refuse to take advice from instructors or ATC. Be advised that having an anti-authority attitude is different from simply questioning authority. Pilots always have the prerogative to speak up to authority if they believe a mistake has been made.
+
+1. **Impulsivity:** “Do something quickly!”
+   According to the FAA, an attitude of impulsivity is found in pilots who “feel the need to do something, anything, immediately.” Instead of taking a moment to think things through or select the best alternative, a pilot with an impulsive attitude does the first thing that comes to mind. Reacting too quickly can lead to irrational decisions, such as skipping a preflight or rushing to get home despite inclement weather. Pilots are encouraged to take time to evaluate their options before choosing a course of action.
+
+1. **Invulnerability:** “It won’t happen to me!”
+   Many people—not just pilots—fall into a pattern of thinking that accidents happen to others, but never to them. This attitude of invulnerability can become a safety concern when pilots fail to consider the risks of their actions.
+
+1. **Macho:** “I can do it!”
+   Pilots with a macho attitude are always trying to impress others and prove themselves by taking unnecessary risks. Both men and women are susceptible to a macho attitude, which leads to foolish and often dangerous behavior. While pilots must have a high level of confidence in their abilities, it’s important to avoid becoming overconfident and adopting a macho attitude.
+
+1. **Resignation:** “What’s the use?”
+   Finally, pilots with an attitude of resignation lack the confidence and conviction to believe they can make a difference in what happens to them. These pilots tend to give up easily when faced with challenges and don’t take criticism well. This attitude is particularly dangerous for pilots in an emergency situation because they may believe they are helpless and resign to their fate instead of taking action.
+
 ## Distractions & threat detection/management
 
 ## Automation monitoring/management

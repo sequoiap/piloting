@@ -4,6 +4,10 @@
 
 ## Airport & aircraft lights
 
+### Airport
+
+### Aircraft
+
 ## Night equipment
 
 ## Night navigation
