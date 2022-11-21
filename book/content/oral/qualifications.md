@@ -57,6 +57,12 @@ period.
 you've mastered the required skills for the safe operation of the flight.
 To become proficient, you should practice your skills in an aircraft.
 
+1. **Day Currency** To carry passengers, you need to log 3 takeoffs and landings within the preceding 90 days. Remember, this to applies to each aircraft category, class and type.
+2. **Night Currency** FAR 61.57 requires that in the preceding 90 days, you've logged 3 takeoffs and landings to a full stop from the time between one hour after sunset to one hour before sunrise, if you want to carry passengers at night.
+3. **Instrument Currency** If you have your instrument rating, you need to fly and log at least 6 instrument approaches, as well as holding, tracking and intercepting with the 6 calendar months preceding the month of your flight.
+4. **Medical** FAR 61.23 outlines medical durations. Any medical certificate is valid for 60 months unless you're over 40 years old, in which case it's valid for 24 months. The difference in valid times, according to 61.23, depends on what sort of operation you use the medical for. As an ATP, for instance, a Class 1 may only be valid for 6 or 12 months. But no matter what, for either 60 or 24 months, you will have the privileges specified under a 3rd class medical regardless of which class you hold.
+1. **Flight Review** [FAR 61.56](https://www.ecfr.gov/current/title-14/part-61) requires each pilot certificate holder to complete a flight review every 24 calendar months (with some exceptions).
+
 ## Personal minimums & unfamiliar aircraft
 
 It's a good idea (a must, really) to maintain personal minimums once you're 

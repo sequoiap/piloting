@@ -65,6 +65,7 @@ Everything for day VFR, plus:
 * Specific to a make and model of an aircraft.
 * If it's acceptable to fly without the equipment, it should be logged, left off, and placarded as INOPERATIVE.
 
+(night-mel)=
 ### Without MEL
 
 * Are the inoperative instruments part of day VFR certification requirements (or required by the specific flight operation, e.g. IFR, night, etc.)?

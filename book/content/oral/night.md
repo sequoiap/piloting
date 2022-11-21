@@ -47,10 +47,14 @@ Military airport beacons flash alternately white and green, but are differentiat
 
 * Position lights required from sunset to sunrise.
 * In addition to the red, green, and white position lights (red to port, green to starboard, and white astern), regulations require one anticollision light for aircraft flying at night. This can be either white or red, and may be either a mechanically rotating beacon or a flashing strobe.
-* Anticollision can be turned off if PIC deems that, for safety, they should be turned off
+* Anticollision can be turned off if PIC deems that, for safety, they should be turned off.
 
 ## Night equipment
 
+See [airworthiness requirements at night (MEL)](night-mel)
+
 ## Night navigation
+
+
 
 ## Emergencies at night
