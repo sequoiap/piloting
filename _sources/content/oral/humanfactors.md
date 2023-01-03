@@ -103,3 +103,11 @@
 ## Distractions & threat detection/management
 
 ## Automation monitoring/management
+
+Before mastering aircraft automation, you must know how to fly the aircraft!
+
+### Information Management
+
+### Automation Management
+
+### Risk Management
