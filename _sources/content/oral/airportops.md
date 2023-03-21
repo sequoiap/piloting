@@ -116,7 +116,7 @@ You must be explicitly cleared into Bravo airspace.
 
 ### Class C
 
-Class C service requires pilots to establish two‐way radio communications before entering Class C airspace. If the controller responds to a radio call with, “(a/c call sign) standby,” radio communications havee been established and the pilot can enter Class C airspace.
+Class C service requires pilots to establish two‐way radio communications before entering Class C airspace. If the controller responds to a radio call with, “(a/c call sign) standby,” radio communications have been established and the pilot can enter Class C airspace.
 
 ### Class D
 
@@ -126,12 +126,13 @@ communications.
 
 ## Lost communication & ATC light signals
 
-```{dropdown} Lost procedures (4 C's)
-1. **Climb** to get a better view/perspective of where you are. Improves radio reception. 
-1. **Communicate** with ATC. Ask for help. 
-1. **Confess** to yourself that you are lost.
-1. **Comply** with all instructions. 
-```
+If you have a radio malfunction (transmit, receive, or both) and need to land at a towered airport:
+
+1. Remain outside or above Class D until direction or flow of traffic is determined.
+1. Advise tower of aircraft type, position, altitude, and intention to land (if you have transmit).
+1. Continue, enter pattern, report position as appropriate, watch for light signals from tower (see diagram below).
+1. If transmitter becomes inoperative, follow above procedures and monitor appropriate ATC frequency. 
+1. Acknowledge by rocking the wings (daylight) or blinking the landing light (night).
 
 ```{figure} ../../images/lightgun.jpg
 ---

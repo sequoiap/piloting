@@ -1,48 +1,59 @@
 
+
 <!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Performance/Weight and Balance &#8212; Piloting</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -50,557 +61,754 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/oral/performance';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Navigation and Flight Planning" href="navigation.html" />
     <link rel="prev" title="Airspace and Radar Services" href="airspace.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../../_static/logo.png" class="logo" alt="logo">
-      
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  PHAK (but shorter)
- </span>
-</p>
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">PHAK (but shorter)</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/introduction.html">
-   1. Introduction to Flying
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/adm.html">
-   2. Aeronautical Decision Making
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/construction.html">
-   3. Aircraft Construction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/principles.html">
-   4. Principles of Flight
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/aerodynamics.html">
-   5. Aerodynamics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/controls.html">
-   6. Flight Controls
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/systems.html">
-   7. Aircraft Systems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/instruments.html">
-   8. Flight Instruments
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/documents.html">
-   9. Flight Manuals and Other Documents
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/wb.html">
-   10. Weight and Balance
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/performance.html">
-   11. Aircraft Performance
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/weathertheory.html">
-   12. Weather Theory
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/weatherservices.html">
-   13. Aviation Weather Services
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/airportops.html">
-   14. Airport Operations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/airspace.html">
-   15. Airspace
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/navigation.html">
-   16. Navigation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../phak/aeromedical.html">
-   17. Aeromedical Factors
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/introduction.html">1. Introduction to Flying</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/adm.html">2. Aeronautical Decision Making</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/construction.html">3. Aircraft Construction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/principles.html">4. Principles of Flight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/aerodynamics.html">5. Aerodynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/controls.html">6. Flight Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/systems.html">7. Aircraft Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/instruments.html">8. Flight Instruments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/documents.html">9. Flight Manuals and Other Documents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/wb.html">10. Weight and Balance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/performance.html">11. Aircraft Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/weathertheory.html">12. Weather Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/weatherservices.html">13. Aviation Weather Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/airportops.html">14. Airport Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/airspace.html">15. Airspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/navigation.html">16. Navigation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../phak/aeromedical.html">17. Aeromedical Factors</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Written
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../written/index.html">
-   Written Exam
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Oral
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Private Pilot</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="index.html">
-   Oral Exam
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="endorsements.html">
-   Endorsements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="qualifications.html">
-   Pilot Qualifications
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="humanfactors.html">
-   Human Factors
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="night.html">
-   Night Operations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="airworthiness.html">
-   Airworthiness Requirements
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="systems.html">
-   Operation of Systems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="aerodynamics.html">
-   Principles of Aerodynamics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="weather.html">
-   Weather Theory and Hazards
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="weatherinfo.html">
-   Weather Information
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="airportops.html">
-   Airport Operations
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="airspace.html">
-   Airspace and Radar Services
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Performance/Weight and Balance
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="navigation.html">
-   Navigation and Flight Planning
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="adm.html">
-   Aeronautical Decision Making and Judgment
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="regulations.html">
-   FAA Regulation and Advisory Information
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../written/index.html">Written Exam</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Oral Exam</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="endorsements.html">Endorsements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualifications.html">Pilot Qualifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="humanfactors.html">Human Factors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="night.html">Night Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airworthiness.html">Airworthiness Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="systems.html">Operation of Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aerodynamics.html">Principles of Aerodynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weather.html">Weather Theory and Hazards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="weatherinfo.html">Weather Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airportops.html">Airport Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airspace.html">Airspace and Radar Services</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Performance/Weight and Balance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="navigation.html">Navigation and Flight Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adm.html">Aeronautical Decision Making and Judgment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regulations.html">FAA Regulation and Advisory Information</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Checkride
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../checkride/index.html">
-   Checkride
-  </a>
- </li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../checkride/index.html">Checkride</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Appendices
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../appendices/notams.html">
-   Acronyms, Abbreviations, and NOTAM Contractions
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../appendices/signsandmarkings.html">
-   Airport Signs and Markings
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/glossary.html">Acronyms, Abbreviations, and NOTAM Contractions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/signsandmarkings.html">Airport Signs and Markings</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/sequoiap/piloting" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/sequoiap/piloting/issues/new?title=Issue%20on%20page%20%2Fcontent/oral/performance.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
 </div>
 
 
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
 
 
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/oral/performance.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
   </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/content/oral/performance.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#weight-balance-terms-principles-calculations-weight-shift">
-   Weight &amp; balance terms, principles, calculations &amp; weight shift
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#performance-charts">
-   Performance charts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#factors-affecting-performance">
-   Factors affecting performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effects-of-weight-cg-density-altitude-wind-on-performance">
-   Effects of weight, CG, density altitude &amp; wind on performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#takeoff-climb-landing-go-around-performance">
-   Takeoff, climb, landing &amp; go-around performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crise-performance">
-   Crise performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vfr-fuel-requirements-day-night">
-   VFR fuel requirements (day &amp; night)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#flight-computers-wind">
-   Flight computers, wind
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effects-of-approaching-exceeding-weight-performance-limitations">
-   Effects of approaching/exceeding weight &amp; performance limitations
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Performance/Weight and Balance</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#weight-balance-terms-principles-calculations-weight-shift">
-   Weight &amp; balance terms, principles, calculations &amp; weight shift
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#performance-charts">
-   Performance charts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#factors-affecting-performance">
-   Factors affecting performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effects-of-weight-cg-density-altitude-wind-on-performance">
-   Effects of weight, CG, density altitude &amp; wind on performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#takeoff-climb-landing-go-around-performance">
-   Takeoff, climb, landing &amp; go-around performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#crise-performance">
-   Crise performance
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#vfr-fuel-requirements-day-night">
-   VFR fuel requirements (day &amp; night)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#flight-computers-wind">
-   Flight computers, wind
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#effects-of-approaching-exceeding-weight-performance-limitations">
-   Effects of approaching/exceeding weight &amp; performance limitations
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Performance/Weight and Balance</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-balance-terms-principles-calculations-weight-shift">Weight &amp; balance terms, principles, calculations &amp; weight shift</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terms">Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation">Calculation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-method">Computational Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-method">Graph Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#table-method">Table Method</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-shift">Weight Shift</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-speeds">Performance speeds</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-charts">Performance charts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-altitude-charts">Density altitude charts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-affecting-performance">Factors affecting performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-weight-cg-density-altitude-wind-on-performance">Effects of weight, CG, density altitude &amp; wind on performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#takeoff-climb-landing-go-around-performance">Takeoff, climb, landing &amp; go-around performance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#takeoff-performance">Takeoff performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#landing-performance">Landing performance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crise-performance">Crise performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flight-computers-wind">Flight computers, wind</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-approaching-exceeding-weight-performance-limitations">Effects of approaching/exceeding weight &amp; performance limitations</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="performance-weight-and-balance">
-<h1>Performance/Weight and Balance<a class="headerlink" href="#performance-weight-and-balance" title="Permalink to this headline">#</a></h1>
+<h1>Performance/Weight and Balance<a class="headerlink" href="#performance-weight-and-balance" title="Permalink to this heading">#</a></h1>
 <section id="weight-balance-terms-principles-calculations-weight-shift">
-<h2>Weight &amp; balance terms, principles, calculations &amp; weight shift<a class="headerlink" href="#weight-balance-terms-principles-calculations-weight-shift" title="Permalink to this headline">#</a></h2>
+<h2>Weight &amp; balance terms, principles, calculations &amp; weight shift<a class="headerlink" href="#weight-balance-terms-principles-calculations-weight-shift" title="Permalink to this heading">#</a></h2>
+<section id="terms">
+<h3>Terms<a class="headerlink" href="#terms" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>balance</dt><dd><p>The location of the CG of an aircraft.</p>
+</dd>
+<dt>stability</dt><dd><p>The ability of the aircraft to maintain or return to its original flight path.</p>
+</dd>
+</dl>
+<p>Primary concern is fore/aft center of gravity along the longitudinal axis (running from nose to tail).</p>
+<dl class="simple myst">
+<dt>arm/moment arm</dt><dd><p>Horizontal distance in inches from the datum line to the CG of an item (+ if aft of the datum, - if fore of the datum).</p>
+</dd>
+<dt>basic empty weight</dt><dd><p>Standard empty weight plus optional/special installed equipment.</p>
+</dd>
+<dt>center of gravity (CG)</dt><dd><p>The point at which the aircraft would balance if suspended at that point.</p>
+</dd>
+<dt>CG limits</dt><dd><p>Forward and aft points within which the CG must be located during flight.</p>
+</dd>
+<dt>CG range</dt><dd><p>Distance between forward and aft CG limits.</p>
+</dd>
+<dt>datum</dt><dd><p>Imaginary vertical plane from which all measurements of arm distance are referenced.</p>
+</dd>
+<dt>floor load limit</dt><dd><p>Maximum weight the floor can sustain per square inch/foot.</p>
+</dd>
+<dt>fuel load</dt><dd><p>Usable fuel load of the aircraft.</p>
+</dd>
+<dt>licensed empty weight</dt><dd><p>Empty weight consisting of airframe, engine, unusable fuel, undrainable oil, and standard and optional equipment as specified in the equipment list.</p>
+</dd>
+<dt>maximum landing weight</dt><dd><p>Greatest weight an aircraft is normally allowed to have at landing.</p>
+</dd>
+<dt>maximum ramp weight</dt><dd><p>Total weight of a loaded aircraft including all fuel (higher than takeoff weight to account for ground operations).</p>
+</dd>
+<dt>maximum takeoff weight</dt><dd><p>Maximum allowable weight for takeoff.</p>
+</dd>
+<dt>maximum weight</dt><dd><p>Maximum authorized weight of the aircraft and all of its equpiment.</p>
+</dd>
+<dt>maximum zero fuel weight</dt><dd><p>Maximum weight, excluding usable fuel.</p>
+</dd>
+<dt>mean aerodynamic chord</dt><dd><p>The average distance from the leading edge to the trailing edge of the wing.</p>
+</dd>
+<dt>moment</dt><dd><p>Product of weight of an item multiplied by its arm, typically expressed in pound-inches (in-lb). Total moment is the weight of the airplane multiplied by the distance between the datum and the CG.</p>
+</dd>
+<dt>moment index</dt><dd><p>Moment divided by a constant such as 100, 1,000, or 10,000. Used to simplify weight and balance computations when dealing with large, unmanageable numbers.</p>
+</dd>
+<dt>payload</dt><dd><p>Weight of occupants, cargo, and baggage.</p>
+</dd>
+<dt>standard empty weight</dt><dd><p>Aircraft weight consisting of airframe, engines, and all items of operating equipment that are permanently installed (including ballast, hydraulic fluid, unusable fuel, and full engine oil).</p>
+</dd>
+<dt>standard weights</dt><dd><p>Established weights for numerous items involved in weight and balance computations.</p>
+<ul class="simple">
+<li><p>Gasoline (6 lb/gal)</p></li>
+<li><p>Jet A, Jet A-1 (6.8 lb/gal)</p></li>
+<li><p>Jet B (6.5 lb/gal)</p></li>
+<li><p>Oil (7.5 lb/gal)</p></li>
+<li><p>Water (8.35 lb/gal)</p></li>
+</ul>
+</dd>
+<dt>station</dt><dd><p>A location in the aircraft identified by a number designating its distance in inches from the datum (e.g. station +50 has an arm of 50 inches).</p>
+</dd>
+<dt>useful load</dt><dd><p>Weight of pilot, copilot, passengers, baggage, usable fuel, drainable oil—essentially, useful load = maximum allowable gross weight - basic empty weight (applicable to GA aircraft only).</p>
+</dd>
+</dl>
+</section>
+<section id="principles">
+<h3>Principles<a class="headerlink" href="#principles" title="Permalink to this heading">#</a></h3>
+<p>CG is usually placed slightly forward of center of lift to provide the necessary elevator authority and longitudinal stability. It causes a nose-down tendency, which helps to prevent stalls at high AOA or slow speeds.</p>
+<p>Forward and aft CG limits define the safe zone.</p>
+<p>Although an aircraft is certified for a specified max takeoff weight, it may not be true in all conditions; high altitude, high temperature, and high humidity can reduce performance.</p>
+<p>A pilot should always be sure that an aircraft is properly loaded.</p>
+</section>
+<section id="calculation">
+<h3>Calculation<a class="headerlink" href="#calculation" title="Permalink to this heading">#</a></h3>
+<section id="computational-method">
+<h4>Computational Method<a class="headerlink" href="#computational-method" title="Permalink to this heading">#</a></h4>
+<p>List items weights, arms, and calculate moment (product of weight and arm).</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Item</p></th>
+<th class="head text-left"><p>Weight</p></th>
+<th class="head text-left"><p>Arm</p></th>
+<th class="head text-left"><p>Moment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Aircraft Empty Weight</p></td>
+<td class="text-left"><p>2,100</p></td>
+<td class="text-left"><p>78.3</p></td>
+<td class="text-left"><p>164,430</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Front Seat Occupants</p></td>
+<td class="text-left"><p>340</p></td>
+<td class="text-left"><p>85.0</p></td>
+<td class="text-left"><p>28,900</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Rear Seat Occupants</p></td>
+<td class="text-left"><p>350</p></td>
+<td class="text-left"><p>121.0</p></td>
+<td class="text-left"><p>42,350</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Fuel</p></td>
+<td class="text-left"><p>450</p></td>
+<td class="text-left"><p>75.0</p></td>
+<td class="text-left"><p>33,750</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Baggage Area 1</p></td>
+<td class="text-left"><p>80</p></td>
+<td class="text-left"><p>150.0</p></td>
+<td class="text-left"><p>12,000</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Total</p></td>
+<td class="text-left"><p>3,320</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>281,430</p></td>
+</tr>
+</tbody>
+</table>
+<p>CG = 281,430 / 3,320 = 84.8</p>
+</section>
+<section id="graph-method">
+<h4>Graph Method<a class="headerlink" href="#graph-method" title="Permalink to this heading">#</a></h4>
+<p>Instead of calculating moment yourself, you trace the weight line for an item up the graph until you hit the desired value, then follow the vertical lines down to the moment value and place that in a table. Total the weight and moment columns, and find their intersection on a moment envelope graph.</p>
+</section>
+<section id="table-method">
+<h4>Table Method<a class="headerlink" href="#table-method" title="Permalink to this heading">#</a></h4>
+<p>Tables are similar, except that now you have to interpolate between values if necessary. Continue to sum weights and moments, and compare it to the forward and aft limit.</p>
+</section>
+</section>
+<section id="weight-shift">
+<h3>Weight Shift<a class="headerlink" href="#weight-shift" title="Permalink to this heading">#</a></h3>
+<p>Weight shifting from one location to another changes the CG without changing the total weight of the aircraft:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{Weight shifted}{Total weight} = \frac{\Delta \text{CG}}{Distance weight is shifted}
+\]</div>
+<p>If you’re adding or removing weight, it also changes the CG:</p>
+<div class="math notranslate nohighlight">
+\[
+    \frac{Added weight}{New total weight} = \frac{\Delta \text{CG}}{Distance between weight (station) and old CG}
+\]</div>
+</section>
+</section>
+<section id="performance-speeds">
+<h2>Performance speeds<a class="headerlink" href="#performance-speeds" title="Permalink to this heading">#</a></h2>
+<dl class="simple myst">
+<dt>true airspeed (TAS)</dt><dd><p>The speed of the aircraft in relation to the air mass in which it is flying</p>
+</dd>
+<dt>indicated airspeed (IAS)</dt><dd><p>The speed of the aircraft as observed on the ASI. It is the airspeed without correction for indicator, position (or installation), or compressibility errors.</p>
+</dd>
+<dt>calibrated airspeed (CAS)</dt><dd><p>The ASI reading corrected for position (or installation) and instrument errors. (CAS is equal to TAS at sea level in standard atmosphere.) The color coding for various design speeds marked on ASIs may be IAS or CAS.</p>
+</dd>
+<dt>equivalent airspeed (EAS)</dt><dd><p>The ASI reading corrected for position (or installation), for instrument error, and for adiabatic compressible flow for the particular altitude. (EAS is equal to CAS at sea level in standard atmosphere.)</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{S0}}\)</span></dt><dd><p>The calibrated power-off stalling speed or the minimum steady flight speed at which the aircraft is controllable in the landing configuration.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{S1}}\)</span></dt><dd><p>The calibrated power-off stalling speed or the minimum steady flight speed at which the aircraft is controllable in a specified configuration.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_Y\)</span></dt><dd><p>The speed at which the aircraft obtains the maximum increase in altitude per unit of time. This best ROC speed normally decreases slightly with altitude.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_X\)</span></dt><dd><p>The speed at which the aircraft obtains the highest altitude in a given horizontal distance. This best AOC speed normally increases slightly with altitude.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{LE}}\)</span></dt><dd><p>The maximum speed at which the aircraft can be safely flown with the landing gear extended. This is a problem involving stability and controllability.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{LO}}\)</span></dt><dd><p>The maximum speed at which the landing gear can be safely extended or retracted. This is a problem involving the air loads imposed on the operating mechanism during extension or retraction of the gear.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{FE}}\)</span></dt><dd><p>The highest speed permissible with the wing flaps in a prescribed extended position. This is because of the air loads imposed on the structure of the flaps.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_A\)</span></dt><dd><p>The calibrated design maneuvering airspeed. This is the maximum speed at which the limit load can be imposed (either by gusts or full deflection of the control surfaces) without causing structural damage. Operating at or below maneuvering speed does not provide structural protection against multiple full control inputs in one axis or full control inputs in more than one axis at the same time.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{N0}}\)</span></dt><dd><p>The maximum airspeed for normal operation or the maximum structural cruising speed. This is the speed at which exceeding the limit load factor may cause permanent deformation of the aircraft structure.</p>
+</dd>
+<dt><span class="math notranslate nohighlight">\(V_{\text{NE}}\)</span></dt><dd><p>The speed that should <em>never</em> be exceeded. If flight is attempted above this speed, structural damage or structural failure may result.</p>
+</dd>
+</dl>
 </section>
 <section id="performance-charts">
-<h2>Performance charts<a class="headerlink" href="#performance-charts" title="Permalink to this headline">#</a></h2>
+<h2>Performance charts<a class="headerlink" href="#performance-charts" title="Permalink to this heading">#</a></h2>
+<dl class="simple myst">
+<dt>performance charts</dt><dd><p>Allow a pilot to predict the takeoff, climb, cruise, and landing performance of an aircraft.</p>
+</dd>
+</dl>
+<section id="density-altitude-charts">
+<h3>Density altitude charts<a class="headerlink" href="#density-altitude-charts" title="Permalink to this heading">#</a></h3>
+<p>If the airport altimeter setting is 30.10 “Hg and the airport elevation is 5,883 feet, from the conversion chart, you must subtract 165 feet from the airport actual altitude to get pressure altitude. You can then use the outside air temperature to get density altitude.</p>
+</section>
 </section>
 <section id="factors-affecting-performance">
-<h2>Factors affecting performance<a class="headerlink" href="#factors-affecting-performance" title="Permalink to this headline">#</a></h2>
+<h2>Factors affecting performance<a class="headerlink" href="#factors-affecting-performance" title="Permalink to this heading">#</a></h2>
+<p>As air becomes less dense, it reduces:</p>
+<ul class="simple">
+<li><p>power, because the engine takes in less air</p></li>
+<li><p>thrust, becuase the propeller is less efficient in thin air</p></li>
+<li><p>lift, because thin air exerts less force on the airfoils</p></li>
+</ul>
+<p>Pressure varies with altitude and temperature. A standard atmosphere at sea level is <span class="math notranslate nohighlight">\(15 ^\circ C\)</span> or <span class="math notranslate nohighlight">\(59 ^\circ F\)</span> and a surface pressure of 29.92 inches of mercury (“Hg) or 1013.2 millibars (mb).</p>
+<p>A standard temperature lapse rate is <span class="math notranslate nohighlight">\(2 ^\circ C\)</span> (<span class="math notranslate nohighlight">\(3.5 ^\circ F\)</span>) per thousand feet up to 36,000 feet. Above this point, temperature is considered constant up to 80,000 feet.</p>
+<p>A standard pressure lapse rate is approximately 1 “Hg  per 1,000 feet of altitude gain up to 10,000 feet.</p>
+<p>This, established by the International Civil Aviation Authority (ICAO) is known as International Standard Atmosphere (ISA) or ICAO Standard Atmosphere.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Pressure altitude conversion</p>
+<figure class="align-default" id="fig-presurealtitude">
+<img alt="../../_images/pressurealtitude.png" src="../../_images/pressurealtitude.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Field elevation versus pressure (PHAK).</span><a class="headerlink" href="#fig-presurealtitude" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<dl class="simple myst">
+<dt>pressure altitude</dt><dd><p>Height above the standard datum plane (SDP). If the altimeter is set to 29.92 “Hg SDP, the altitude indicated is the pressure altitude—the altitude in the standard atmosphere corresponding to the sensed pressure.</p>
+</dd>
+</dl>
+<p>Pressure altitude can be found by</p>
+<ol class="arabic simple">
+<li><p>Setting the barometric scale of the altimeter to 29.92 “Hg and reading the indicated altitude</p></li>
+<li><p>Applying a correction factor to the indicated altitude according to the reported altimeter setting</p></li>
+<li><p>Using a flight computer</p></li>
+</ol>
+<aside class="sidebar">
+<p class="sidebar-title">Density altitude chart</p>
+<figure class="align-default" id="fig-densityaltitudechart">
+<img alt="../../_images/densityaltitudechart.png" src="../../_images/densityaltitudechart.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Density altitude chart.</span><a class="headerlink" href="#fig-densityaltitudechart" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<dl class="simple myst">
+<dt>density altitude</dt><dd><p>Pressure altitude corrected for nonstandard temperature.</p>
+</dd>
+</dl>
+<p>As the density of the air increases (lower density altitude), aircraft performance increases. Density altitude is used in calculating aircraft performance. Under standard atmospheric conditions, each level in the atmosphere has a specific density, and pressure altitude and density altitude identify the same level.</p>
+<p>Air density is affected by changes in altitude, temperature, and humidity.
+High density altitude refers to thin air, while low density altitude refers to dense air.</p>
+<aside class="sidebar">
+<p class="sidebar-title">High pressure to low</p>
+<figure class="align-default" id="fig-highptolow">
+<img alt="../../_images/highptolow.png" src="../../_images/highptolow.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">High pressure to low, look out below! (<a class="reference external" href="https://www.aopa.org/news-and-media/all-news/2017/october/flight-training-magazine/weather-look-out-below">source</a>)</span><a class="headerlink" href="#fig-highptolow" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<aside class="sidebar">
+<p class="sidebar-title">High temperatures to low</p>
+<figure class="align-default" id="fig-highttolow">
+<img alt="../../_images/highttolow.png" src="../../_images/highttolow.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">High temperature to low, look out below! (<a class="reference external" href="http://cfiruss.blogspot.com/2014/02/its-cold-are-you-too-low.html">source</a>)</span><a class="headerlink" href="#fig-highttolow" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>High density altitude conditions:</p>
+<ul class="simple">
+<li><p>high elevations</p></li>
+<li><p>low atmospheric pressures</p></li>
+<li><p>high temperatures</p></li>
+<li><p>high humidity</p></li>
+</ul>
+<p>Low density altitude conditions:</p>
+<ul class="simple">
+<li><p>low elevations</p></li>
+<li><p>high atmospheric pressure</p></li>
+<li><p>low temperatures</p></li>
+<li><p>low humidity</p></li>
+</ul>
+<p>Water vapor is lighter than air, so moist air is lighter than dry air. As water content increases, air becomes less dense, increasing density altitude and decreasing performance.</p>
+<dl class="simple myst">
+<dt>humidity</dt><dd><p>The amount of water vapor contained in the atmosphere, expressed as a percentage of the maximum amount of water vapor the air can hold (temperature dependent). Warm air can hold more, and cold air holds less.</p>
+</dd>
+</dl>
 </section>
 <section id="effects-of-weight-cg-density-altitude-wind-on-performance">
-<h2>Effects of weight, CG, density altitude &amp; wind on performance<a class="headerlink" href="#effects-of-weight-cg-density-altitude-wind-on-performance" title="Permalink to this headline">#</a></h2>
+<h2>Effects of weight, CG, density altitude &amp; wind on performance<a class="headerlink" href="#effects-of-weight-cg-density-altitude-wind-on-performance" title="Permalink to this heading">#</a></h2>
+<p>Primary factors most affected by performance:</p>
+<ul class="simple">
+<li><p>takeoff and landing distance</p></li>
+<li><p>rate of climb</p></li>
+<li><p>ceiling</p></li>
+<li><p>payload</p></li>
+<li><p>range</p></li>
+<li><p>spseed</p></li>
+<li><p>maneuverability</p></li>
+<li><p>stability</p></li>
+<li><p>fuel economy</p></li>
+</ul>
+<p>Parasitic drag dominates at high speed, while induced drag dominates at low speed.</p>
 </section>
 <section id="takeoff-climb-landing-go-around-performance">
-<h2>Takeoff, climb, landing &amp; go-around performance<a class="headerlink" href="#takeoff-climb-landing-go-around-performance" title="Permalink to this headline">#</a></h2>
+<h2>Takeoff, climb, landing &amp; go-around performance<a class="headerlink" href="#takeoff-climb-landing-go-around-performance" title="Permalink to this heading">#</a></h2>
+<dl class="simple myst">
+<dt>angle of climb (AOC)</dt><dd><p>Altitude gained relative to distance traveled</p>
+</dd>
+</dl>
+<p>Max AOC helps taking off from a short airfield surrounded by high obstacles.</p>
+<dl class="simple myst">
+<dt>rate of climb (ROC)</dt><dd><p>Altitude gained relative to time needed to reach that altitude</p>
+</dd>
+</dl>
+<p>Max ROC expedites a climb to an assigned altitude.</p>
+<p>Increase in weight, altitude, lowering the landing gear, or lowering the flaps all decrease both excess thrust and excess power and max AOC/ROC performance decreases.</p>
+<p>If weight is added to an aircraft, it must fly at a higher AOA to maintain a given altitude and speed, increasing the induced drag of the wings and the parasite drag of the aircraft. More thrust is needed to overcome it, leaving less reserve thrust for climbing.</p>
+<p>Climb performance diminishes with altitude.</p>
+<dl class="simple myst">
+<dt>service ceiling</dt><dd><p>Altitude at which the aircraft is unable to climb at a rate greater than 100 feet per minute (fpm).</p>
+</dd>
+<dt>region of reversed command</dt><dd><p>Flight in which a higher airspeed requires a lower power setting and a lower airspeed requires a higher power setting to hold altitude.</p>
+</dd>
+<dt>best endurance speed</dt><dd><p>Location on the power curve at which the lowest brake horsepower sustains level flight.</p>
+</dd>
+</dl>
+<section id="takeoff-performance">
+<h3>Takeoff performance<a class="headerlink" href="#takeoff-performance" title="Permalink to this heading">#</a></h3>
+<p>Any surface that is not hard and smooth increases the ground roll during takeoff. Obstructions (muddy and wet surfaces) can also act to reduce the landing distance.</p>
+<dl class="simple myst">
+<dt>minimum takeoff distance</dt><dd><p>Distance obtained by taking off at some minimum safe speed that allows sufficient margin above stall and provides satisfactory control and initial ROC. Depending on aircraft characteristics, liftoff speed can be anywhere from 1.05 to 1.25 times the stall speed or minimum control speed.</p>
+</dd>
+</dl>
+<p>Increased gross weight affects takeoff performance:</p>
+<ol class="arabic simple">
+<li><p>Higher liftoff speed</p></li>
+<li><p>Greater mass to accelerate</p></li>
+<li><p>Increased retarding force (drag and ground friction)</p></li>
+</ol>
+<aside class="sidebar">
+<p class="sidebar-title">Wind</p>
+<figure class="align-default" id="fig-windperformance">
+<img alt="../../_images/windperformance.png" src="../../_images/windperformance.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Effect of wind on takeoff and landing (<a class="reference external" href="http://learntoflyblog.com/2015/10/05/aircraft-performance-takeoff-distance/">source</a>)</span><a class="headerlink" href="#fig-windperformance" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>Effect of wind is large; headwind allows aircraft to reach lift-off speed at a lower groundspeed. Tailwinds require the aircraft to achieve a greater groundspeed to attain liftoff speed.</p>
+<p>A headwind that is 10% of takeoff airspeed reduces takeoff distance by approximately 19%. A 10% tailwind increases takeoff distance approximately 21%.</p>
+<p>Increase in density altitude can:</p>
+<ol class="arabic simple">
+<li><p>Require a greater takeoff speed</p></li>
+<li><p>Result in decreased thrust and reduced net accelerating force.</p></li>
+</ol>
+<p>When predicting takeoff distance from POH, consider:</p>
+<ul class="simple">
+<li><p>Pressure altitude and temperature</p></li>
+<li><p>Gross weight</p></li>
+<li><p>Wind</p></li>
+<li><p>Runway slope and condition</p></li>
+</ul>
+</section>
+<section id="landing-performance">
+<h3>Landing performance<a class="headerlink" href="#landing-performance" title="Permalink to this heading">#</a></h3>
+<p>Effect of wind on landing distance is identical to its effect on takeoff distance.</p>
+<p>At speeds less than 60 to 70 percent of touchdown speed, aerodynamic drag is so slight as to be of little use.</p>
+<p>Gross weight affects landing distance; higher gross weight requires greater speed to support the aircraft at landing.</p>
+<p>An increase in density altitude increases the landing speed. An aircraft lands at the same IAS as at sea level, but because of reduced density, TAS is greater.</p>
+<p>A 10% increase in landing speed causes at least a 21% increase in landing distance.</p>
+<p>Most critical conditions of landing performance:</p>
+<ul class="simple">
+<li><p>High gross weight</p></li>
+<li><p>High density altitude</p></li>
+<li><p>Unfavorable wind</p></li>
+</ul>
+</section>
 </section>
 <section id="crise-performance">
-<h2>Crise performance<a class="headerlink" href="#crise-performance" title="Permalink to this headline">#</a></h2>
-</section>
-<section id="vfr-fuel-requirements-day-night">
-<h2>VFR fuel requirements (day &amp; night)<a class="headerlink" href="#vfr-fuel-requirements-day-night" title="Permalink to this headline">#</a></h2>
+<h2>Crise performance<a class="headerlink" href="#crise-performance" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="flight-computers-wind">
-<h2>Flight computers, wind<a class="headerlink" href="#flight-computers-wind" title="Permalink to this headline">#</a></h2>
+<h2>Flight computers, wind<a class="headerlink" href="#flight-computers-wind" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="effects-of-approaching-exceeding-weight-performance-limitations">
-<h2>Effects of approaching/exceeding weight &amp; performance limitations<a class="headerlink" href="#effects-of-approaching-exceeding-weight-performance-limitations" title="Permalink to this headline">#</a></h2>
+<h2>Effects of approaching/exceeding weight &amp; performance limitations<a class="headerlink" href="#effects-of-approaching-exceeding-weight-performance-limitations" title="Permalink to this heading">#</a></h2>
 </section>
 </section>
 
@@ -616,7 +824,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./content/oral"
         },
         predefinedOutput: true
@@ -624,50 +832,125 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="airspace.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Airspace and Radar Services</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="airspace.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Airspace and Radar Services</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="navigation.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="navigation.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Navigation and Flight Planning</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-balance-terms-principles-calculations-weight-shift">Weight &amp; balance terms, principles, calculations &amp; weight shift</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#terms">Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#principles">Principles</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation">Calculation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-method">Computational Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-method">Graph Method</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#table-method">Table Method</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#weight-shift">Weight Shift</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-speeds">Performance speeds</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#performance-charts">Performance charts</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#density-altitude-charts">Density altitude charts</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factors-affecting-performance">Factors affecting performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-weight-cg-density-altitude-wind-on-performance">Effects of weight, CG, density altitude &amp; wind on performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#takeoff-climb-landing-go-around-performance">Takeoff, climb, landing &amp; go-around performance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#takeoff-performance">Takeoff performance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#landing-performance">Landing performance</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crise-performance">Crise performance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#flight-computers-wind">Flight computers, wind</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#effects-of-approaching-exceeding-weight-performance-limitations">Effects of approaching/exceeding weight &amp; performance limitations</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By Sequoia Ploeg<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
-</div>
+<p class="component-author">
+By Sequoia Ploeg
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
 
-      </div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

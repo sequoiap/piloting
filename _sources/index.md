@@ -29,7 +29,7 @@ Sequoia
 ```{note}
 I mean no copyright infringement! Since this summarizes the PHAK, available for
 free [online](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak), 
-some sentences are taken directly from the bookk. As this is not a for-profit
+some sentences are taken directly from the book. As this is not a for-profit
 project, but an open-source resource, borrowed snippets are used under fair 
 use.
 

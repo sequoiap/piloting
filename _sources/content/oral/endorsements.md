@@ -1,13 +1,14 @@
 # Endorsements
 
-For more info, see https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61.
+For more info, see the [CFR's](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61).
 
 ## 61.87(b) Pre-solo aeronautical knowledge
 
 Aeronautical knowledge.  A student pilot must demonstrate satisfactory aeronautical knowledge on a knowledge test that meets the requirements of this paragraph: 
 
+% TODO: when JupyterBook supports myst-parser >= 0.19, start adding these to get better list formatting: {style=lower-alpha}
 1. The test must address the student pilot's knowledge of - 
-    1. Applicable sections of parts 61 and 91 of this chapter; 
+    1. Applicable sections of parts [61](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61) and [91](https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91) of this chapter; 
     1. Airspace rules and procedures for the airport where the solo flight will be performed; and 
     1. Flight characteristics and operational limitations for the make and model of aircraft to be flown. 
 1. The student's authorized instructor must - 
@@ -42,7 +43,7 @@ Limitations on flight instructors authorizing solo flight.  No instructor may au
 1. Determined the student pilot is proficient in the make and model of aircraft to be flown; and 
 1. Endorsed the student pilot's logbook for the specific make and model aircraft to be flown, and that endorsement remains current for solo flight privileges, provided an authorized instructor updates the student's logbook every 90 days thereafter. 
 
-## 61.93(b) (1) For towered airport landings. (KPVU)
+## 61.93(b) (1) For towered airport landings
 
 Authorization to perform certain solo flights and cross-country flights.  A student pilot must obtain an endorsement from an authorized instructor to make solo flights from the airport where the student pilot normally receives training to another location. A student pilot who receives this endorsement must comply with the requirements of this paragraph. 
 
@@ -53,7 +54,7 @@ Authorization to perform certain solo flights and cross-country flights.  A stud
     1. The authorized instructor has determined that the student pilot is proficient to make the flight; and 
     1. The purpose of the flight is to practice takeoffs and landings at that other airport. 
 
-## 61.93(c) (1 and 2) Solo cross-country flight (Instal)
+## 61.93(c) (1 and 2) Solo cross-country flight
 
 Endorsements for solo cross-country flights.  Except as specified in paragraph (b)(2) of this section, a student pilot must have the endorsements prescribed in this paragraph for each cross-country flight: 
 
