@@ -41,3 +41,10 @@ To first point of landing, plus 45 minutes reserve at normal cruise speed.
 ## FSS flight plan
 
 ## Lost procedures & diversion
+
+```{dropdown} Lost procedures (4 C's)
+1. **Climb** to get a better view/perspective of where you are. Improves radio reception. 
+1. **Communicate** with ATC. Ask for help. 
+1. **Confess** to yourself that you are lost.
+1. **Comply** with all instructions. 
+```
