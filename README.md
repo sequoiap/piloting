@@ -1,2 +1,2 @@
 # piloting
-Like the PHAK, but shorter.
+It's like, the PHAK, but shorter. 

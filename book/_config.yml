@@ -6,12 +6,29 @@ author: Sequoia Ploeg
 copyright: "2022"
 logo: logo.png
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
+# # Force re-execution of notebooks on each build.
+# # See https://jupyterbook.org/content/execute.html
+# execute:
+#   execute_notebooks: force
 
-# Define the name of the latex output file for PDF builds
+parse:
+  myst_enable_extensions:
+    # - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    # - substitution
+    # - tasklist
+    # TODO: New in myst-parser >= 0.19:
+    # - attrs_block
+    # - attrs_inline
+
+# # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
     targetname: book.tex
@@ -35,7 +52,5 @@ html:
 sphinx:
   config:
     html_theme: "sphinx_book_theme"
-    html_theme_options:
-      logo_only: True
     language: "en"
     
