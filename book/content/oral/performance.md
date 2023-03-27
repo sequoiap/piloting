@@ -354,6 +354,26 @@ When predicting takeoff distance from POH, consider:
 * Wind
 * Runway slope and condition
 
+```{figure} ../../images/takeoff_performance_chart.png
+---
+name: fig-takeoff_performance
+---
+Takeoff distance graph ([source](https://www.faa.gov/aviation/phak/pilots-handbook-aeronautical-knowledge-faa-h-8083-25b))
+```
+
+In the above (traced) example:
+
+| Condition | Value |
+| :-- | :-- |
+| Pressure Altitude | 2,000 feet |
+| OAT | $22^\circ \text{C}$ |
+| Takeoff weight | 2,600 pounds |
+| Headwind | 6 knots |
+| Obstacle height | 50 foot obstacle |
+
+This shows a 700 foot ground roll distance and a 1,400 foot total distance 
+required to clear a 50 foot obstacle.
+
 ### Landing performance
 
 Effect of wind on landing distance is identical to its effect on takeoff distance.
@@ -372,7 +392,29 @@ Most critical conditions of landing performance:
 * High density altitude
 * Unfavorable wind
 
-## Crise performance
+```{figure} ../../images/landing_performance_chart.png
+---
+name: fig-landing_performance
+---
+Landing distance graph ([source](https://www.faa.gov/aviation/phak/pilots-handbook-aeronautical-knowledge-faa-h-8083-25b))
+```
+
+In the above (traced) example:
+
+| Condition | Value |
+| :-- | :-- |
+| Pressure Altitude | 4,000 feet |
+| OAT | $57^\circ \text{F}$ |
+| Takeoff weight | 2,400 pounds |
+| Headwind | 6 knots |
+| Obstacle height | 50 foot obstacle |
+
+This shows a ground roll of 975 feet and a 1,500 feet required distance over a 
+50 foot obstacle.
+
+## Climb and cruise performance
+
+
 
 ## Flight computers, wind
 
