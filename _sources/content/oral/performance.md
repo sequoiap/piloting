@@ -123,13 +123,13 @@ Tables are similar, except that now you have to interpolate between values if ne
 Weight shifting from one location to another changes the CG without changing the total weight of the aircraft:
 
 $$
-    \frac{Weight shifted}{Total weight} = \frac{\Delta \text{CG}}{Distance weight is shifted}
+    \frac{\text{Weight shifted}}{\text{Total weight}} = \frac{\Delta \text{CG}}{\text{Distance weight is shifted}}
 $$
 
 If you're adding or removing weight, it also changes the CG:
 
 $$
-    \frac{Added weight}{New total weight} = \frac{\Delta \text{CG}}{Distance between weight (station) and old CG}
+    \frac{\text{Added weight}}{\text{New total weight}} = \frac{\Delta \text{CG}}{\text{Distance between weight (station) and old CG}}
 $$
 
 ## Performance speeds
