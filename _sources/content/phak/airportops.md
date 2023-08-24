@@ -17,7 +17,7 @@ Radio should be fixed before flying again, although if not possible, it's possib
 ```{figure} ../../images/lightgun.jpg
 ---
 height: 400px
-name: fig-lightgun
+name: fig-lightgun1
 ---
 Lightgun signals. ([source](https://www.mypilotstore.com/mypilotstore/sep/13276))
 ```
