@@ -14,7 +14,7 @@ Six types of signs installed at airports.
 1. Mandatory instruction signs: red background, white text. Denotes an entrance to a runway, critical area, or prohibited area.
 1. Location sign: black background, yellow text, yellow border. Identifies taxiways, runway locations, boundary of a runway, ILS critical areas.
 1. Direction sign: yellow background, black text. Identifies designation of intersecting taxiways leading out of an intersection.
-1. Destination sign: yellow background, back text. Might contain arrows, provides directions to runways, terminals, cargo areas, civil aviation areas, FBO's, etc.
+1. Destination sign: yellow background, black text. Might contain arrows, provides directions to runways, terminals, cargo areas, civil aviation areas, FBO's, etc.
 1. Information sign: yellow background, black text. Provides pilots with information on areas that can't be seen by the tower, radio frequencies, noise abatement procedures, etc.
 1. Runway distance remaining sign: black background, white text. Shows remaining runway distance in thousands of feet.
 ````

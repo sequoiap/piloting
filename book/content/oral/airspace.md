@@ -32,7 +32,58 @@ VFR minimums in various airspaces. ([source](https://quizlet.com/319377133/airsp
 
 ## TAC VFR corridors & transitions routes
 
+VFR Terminal Area Charts (TACs) provide more detail when flying in or near Class B airspace. They cover the busiest airspace in the country. They have a scale of 1 inch : 3.43 NM.
+
+* VFR corridors are marked "tunnels" through a Class B airspace. You don't need an ATC clearance to fly a VFR corridor. They have lateral and vertical boundaries.
+
+* Class B traffic routes (IFR arrivals) are marked, often with altitudes. Avoid these areas of heavy traffic. 
+
+![IFR arrival routes](/images/ifr_arrivals.jpg)
+
+* VFR transition routes are commonly used by ATC to move traffic through busy airspace. **You need an ATC clearance to fly a VFR transition route.**
+
+![VFR transition routes](/images/vfr_transitions.jpg)
+
+* VFR flyways have a thick blue border with arrows on either end, and altitudes marked. These are routes you can follow to avoid flying through Class B airspace. You don't need an ATC clearance to fly a VFR flyway. 
+
+![VFR flyways](/images/vfr_flyways.jpg)
+
 ## VFR radar services & flight following
+
+Flight following provides
+
+* Safety alerts
+* Traffic advisories
+* Limited radar vectoring
+* Sequencing at some locations
+
+Flight following is different from your flight plan; requesting flight following does not open your flight plan, for which you need to contact a Flight Service Station (FSS).
+
+You must still 
+
+* Maintain VFR separation from other aircraft
+* Remain clear of clouds, remain in VFR conditions
+* Comply with FARs
+
+Flight following is provided on a workload permitting basis. If ATC is too busy, they may not be able to provide flight following.
+
+ATC would probably prefer to have you on frequency, as it's one less aircraft they have to guess intentions for.
+
+To request, consult the A/FD, chart supplement, or sectional chart for published Center or Departure/Approach control frequencies. Some airports may offer flight following through ground control before departure.
+
+To request flight following, contact the appropriate ATC facility and provide:
+
+* Your aircraft identification
+* Your aircraft type
+* Your current location and altitude
+* Your destination
+* "Request flight following"
+
+To end flight following, contact the appropriate ATC facility and:
+
+* "Cancel flight following", or 
+* "Cancel radar services", or
+* "Cancel VFR flight following"
 
 ## Special use airspace
 
