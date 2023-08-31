@@ -396,7 +396,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts-chart-supplement-notams">Aeronautical charts, chart supplement &amp; NOTAMs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts-chart-supplement-notams">Aeronautical charts, chart supplement &amp; NOTAMs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts">Aeronautical charts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chart-supplement">Chart supplement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notams">NOTAMs</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airspace-obstructions-terrain">Airspace, obstructions &amp; terrain</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cruise-altitudes">Cruise altitudes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#route-selection-checkpoints-pilotage-dead-reckoning">Route selection, checkpoints, pilotage, &amp; dead reckoning</a></li>
@@ -420,6 +425,56 @@ document.write(`
 <h1>Navigation and Flight Planning<a class="headerlink" href="#navigation-and-flight-planning" title="Permalink to this heading">#</a></h1>
 <section id="aeronautical-charts-chart-supplement-notams">
 <h2>Aeronautical charts, chart supplement &amp; NOTAMs<a class="headerlink" href="#aeronautical-charts-chart-supplement-notams" title="Permalink to this heading">#</a></h2>
+<section id="aeronautical-charts">
+<h3>Aeronautical charts<a class="headerlink" href="#aeronautical-charts" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="chart-supplement">
+<h3>Chart supplement<a class="headerlink" href="#chart-supplement" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="notams">
+<h3>NOTAMs<a class="headerlink" href="#notams" title="Permalink to this heading">#</a></h3>
+<p>Notice to Air Missions (NOTAMs) provide time-critical aeronautical information that is temporary or to be published at a later date.</p>
+<p>NOTAMs are cancelled once the information is published on a chart or the conditions return to their normal state.</p>
+<p>NOTAMs may be distributed up to 7 days before the start of the disrupting activity.</p>
+<p>NOTAMs are available through the FSS or <a class="reference external" href="https://notams.aim.faa.gov/notamSearch/">online</a>.</p>
+<p>Current NOTAM information may affect:</p>
+<ul class="simple">
+<li><p>Aerodromes</p></li>
+<li><p>Runway, taxiway, and ramp restrictions</p></li>
+<li><p>Obstructions</p></li>
+<li><p>Communications</p></li>
+<li><p>Airspace</p></li>
+<li><p>Changes in the status of navigational aids, landing systems, or radar service availability</p></li>
+<li><p>Status of navigational aids or radar service availability</p></li>
+<li><p>Hazards, such as air shows, parachute jumps, kite flying, and rocket launches</p></li>
+<li><p>Flights by important people such as heads of state</p></li>
+<li><p>Military exercises with resulting airspace restrictions</p></li>
+<li><p>Inoperable lights on tall obstructions</p></li>
+<li><p>Temporary erection of obstacles near airfields</p></li>
+<li><p>Passage of flocks of birds through airspace (a NOTAM in this category is known as a BIRDTAM)</p></li>
+<li><p>Notifications of runway/taxiway/apron status with respect to snow, ice, and standing water (a SNOWTAM)</p></li>
+<li><p>Notification of an operationally significant change in volcanic ash or other dust contamination (an ASHTAM)</p></li>
+<li><p>Software code risk announcements with associated patches to reduce specific vulnerabilities</p></li>
+<li><p>Other information essential to planned en route, terminal, or landing operations</p></li>
+</ul>
+<p>(<a class="reference external" href="https://www.cfinotebook.net/notebook/publications-and-references/notice-to-air-missions">source</a>)</p>
+<p>Composition reads, in order from left to right:</p>
+<ul class="simple">
+<li><p>An exclamation point (!)</p></li>
+<li><p>Accountability Location (the identifier of the accountability location)</p></li>
+<li><p>Affected Location (the identifier of the affected facility or location)</p></li>
+<li><p>KEYWORD (one of the following: RWY, TWY, RAMP, APRON, AD, COM, NAV, SVC, OBST, AIRSPACE, (U) and (O))</p></li>
+<li><p>Surface Identification (optional-this shall be the runway identification for runway related NOTAMs, the taxiway identification for taxiway-related NOTAMs, or the ramp/apron identification for ramp/ apron-related NOTAMs)</p></li>
+<li><p>Condition (the condition being reported)</p></li>
+<li><p>Time (identifies the effective time(s) of the NOTAM condition)</p></li>
+</ul>
+<p>Altitude and height are in feet mean sea level (MSL) up to 17,999; e.g., 275, 1225 (feet and MSL is not written), and in flight levels (FL) for 18,000 and above; e.g., FL180, FL550. When MSL is not known, above ground level (AGL) will be written (304 AGL)
+When time is expressed in a NOTAM, the day begins at 0000 and ends at 2359. Times used in the NOTAM system are universal time coordinated (UTC) and shall be stated in 10 digits (year, month, day, hour, and minute). The following are two examples of how the time would be presented:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!DCA LDN NAV VOR OTS WEF 0708051600-0708052359
+!DCA LDN NAV VOR OTS WEF 0709050000-0709050400
+</pre></div>
+</div>
+</section>
 </section>
 <section id="airspace-obstructions-terrain">
 <h2>Airspace, obstructions &amp; terrain<a class="headerlink" href="#airspace-obstructions-terrain" title="Permalink to this heading">#</a></h2>
@@ -457,6 +512,22 @@ document.write(`
 </section>
 <section id="fss-flight-plan">
 <h2>FSS flight plan<a class="headerlink" href="#fss-flight-plan" title="Permalink to this heading">#</a></h2>
+<p>Flight service stations (FSS) are air traffic facilities which provides services to pilots not otherwise available through standard control agencies. They</p>
+<ul class="simple">
+<li><p>provide pilot briefings,</p></li>
+<li><p>flight plan processing,</p></li>
+<li><p>en route flight advisories,</p></li>
+<li><p>search and rescue services,</p></li>
+<li><p>and assistance to lost aircraft in emergency situations.</p></li>
+</ul>
+<p>They can also relay ATC clearances, NOTAMs, and broadcast weather and other aeronautical information.</p>
+<p>Provides pre-flight, in-flight, and operational services, 24/7.</p>
+<ul class="simple">
+<li><p>1-800-WX-BRIEF</p></li>
+</ul>
+<p>They may coverage large land areas, and therefore be made available through remote communications outlets (RCO), which may be located by itself or as part of a VOR (VHF omni-directional range). Frequencies can be located in the Chart Supplement or IFR en-route charts and sectionals.</p>
+<p>FSS stores flight plans, opens and closes flight plans, initiates search and rescue if flight plan is not closed 30 minutes after ETA, and solicits PIREPs.</p>
+<p>Flight plans can be fired with the nearest FSS. They can be reached by phone, and can flight plans can be submitted when receiving a briefing. Flight plans are then opened once in the air.</p>
 </section>
 <section id="lost-procedures-diversion">
 <h2>Lost procedures &amp; diversion<a class="headerlink" href="#lost-procedures-diversion" title="Permalink to this heading">#</a></h2>
@@ -538,7 +609,12 @@ Lost procedures (4 C’s)<div class="sd-summary-down docutils">
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts-chart-supplement-notams">Aeronautical charts, chart supplement &amp; NOTAMs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts-chart-supplement-notams">Aeronautical charts, chart supplement &amp; NOTAMs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aeronautical-charts">Aeronautical charts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chart-supplement">Chart supplement</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#notams">NOTAMs</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airspace-obstructions-terrain">Airspace, obstructions &amp; terrain</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cruise-altitudes">Cruise altitudes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#route-selection-checkpoints-pilotage-dead-reckoning">Route selection, checkpoints, pilotage, &amp; dead reckoning</a></li>
