@@ -79,7 +79,81 @@ VFR cruise altitudes above 3000 ft. ([source](https://learntofly.ca/vfr-ifr-crui
 
 ## Route selection, checkpoints, pilotage, & dead reckoning
 
+```{dropdown} Pilotage
+Navigation by reference to landmarks and checkpoints.
+```
+
+```{dropdown} Checkpoints
+Prominent features common to the area of flight. They should be readily identified by other features, such as roads, rivers, railroad tracks, lakes, and power lines. If possible, select features that make useful boundaries or brackets on each side of the road.
+```
+
+```{dropdown} Dead reckoning
+Navigation solely by means of computations based on time, airspeed, distance, and direction.
+```
+
 ## Radio navigation
+
+Three systems available for VFR navigation:
+
+1. VHF Omnidirectional Range (VOR)
+1. Nondirectional Radio Beacon (NDB)
+1. Global Positioning System (GPS)
+
+### VOR
+
+Present in three NAVAID flavors:
+
+1. VOR
+1. VOR/Distance Measuring Equipment (DME)
+1. VOR/Tactical Air Navigation (TACAN) makes it a (VORTAC)
+
+VORs are VHF radio stations that project radials in all directions (line-of-sight only). These radials are referenced to magnetic north. Reception 1000 ft above the ground is generally 40-45 miles, and increases with altitude.
+
+Transmitting stations can be positively identified by their Morse code identification. 
+
+Aircraft must have a receiver to use a VOR. Navigation instruments displaying VOR data include:
+
+* Course deviation indicator (CDI)
+* Horizontal situation indicator (HSI)
+* Radio magnetic indicator (RMI)
+
+#### Course deviation indicator (CDI)
+
+Found in most training aircraft, it consists of a omnibearing selector (OBS) and a CDI needle that moves left and right to indicate the aircraft's position relative to the selected radial, as well as a TO/FROM indicator. When the course selector is rotated, it moves the CDI or needle to indicate the position of the radial relative to the aircraft. 
+
+If the course selector is rotated until the deviation needle is centered, the radial (magnetic course “FROM” the station) or its reciprocal (magnetic course “TO” the station) can be determined. The course deviation needle also moves to the right or left if the aircraft is flown or drifting away from the radial which is set in the course selector.
+
+By centering the needle, the course selector indicates either
+the course “FROM” the station or the course “TO” the station.
+If the flag displays a “TO,” the course shown on the course
+selector must be flown to the station. [Figure 16-29] If
+“FROM” is displayed and the course shown is followed, the
+aircraft is flown away from the station.
+
+#### Distance measuring equipment (DME)
+
+DME measures in nautical miles the slant range to the aircraft. 
+
+slant range distance
+    The direct distance between the aircraft and the VORTAC. It is affected by altitude; station passage at an altitude of 6,076 feet AGL would show 1 NM on the DME.
+
+#### Area navigation (RNAV)
+
+Area navigation (RNAV) permits electronic course guidance on any route between points (waypoints) established by the pilot. 
+
+waypoints
+    A combination of selected radial and distance points within the service volume of the VORTAC to be used.
+
+### Non-directional beacon (NDB)
+
+* Not affected by line-of-sight.
+* Needle points directly to the station.
+
+### Global positioning system (GPS)
+
+* RNAV coverage that is worldwide in scope.
+* Minimum of four satellites is necessary to establish an accurate three-dimensional position.
+* The GPS receiver verifies the integrity (usability) of the signals received from the GPS constellation through receive autonomous integrity monitoring (RAIM) to determine if a satellite is providing corrupted information. At least one satellite, in addition to those required for navigation, must be in view for the receiver to perform the RAIM function; thus, RAIM needs a minimum of five satellites in view or four satellites and a barometric altimeter (baro-aiding) to detect an integrity anomaly.
 
 ## E6-B, navlog calculations & use
 
@@ -123,3 +197,8 @@ Flight plans can be fired with the nearest FSS. They can be reached by phone, an
 1. **Confess** to yourself that you are lost.
 1. **Comply** with all instructions. 
 ```
+
+
+Guard frequency is 121.5 MHz. If a situation becomes threatening, transmit the
+situation on guard and set the transponder to 7700. Most facilities (and even
+airliners) monitor the emergency frequency.
