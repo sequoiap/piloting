@@ -405,7 +405,17 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airspace-obstructions-terrain">Airspace, obstructions &amp; terrain</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cruise-altitudes">Cruise altitudes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#route-selection-checkpoints-pilotage-dead-reckoning">Route selection, checkpoints, pilotage, &amp; dead reckoning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-navigation">Radio navigation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-navigation">Radio navigation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vor">VOR</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#course-deviation-indicator-cdi">Course deviation indicator (CDI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distance-measuring-equipment-dme">Distance measuring equipment (DME)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#area-navigation-rnav">Area navigation (RNAV)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-directional-beacon-ndb">Non-directional beacon (NDB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-positioning-system-gps">Global positioning system (GPS)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e6-b-navlog-calculations-use">E6-B, navlog calculations &amp; use</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vfr-fuel-requirements">VFR fuel requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fss-flight-plan">FSS flight plan</a></li>
@@ -496,9 +506,97 @@ When time is expressed in a NOTAM, the day begins at 0000 and ends at 2359. Time
 </section>
 <section id="route-selection-checkpoints-pilotage-dead-reckoning">
 <h2>Route selection, checkpoints, pilotage, &amp; dead reckoning<a class="headerlink" href="#route-selection-checkpoints-pilotage-dead-reckoning" title="Permalink to this heading">#</a></h2>
-</section>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Pilotage<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Navigation by reference to landmarks and checkpoints.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Checkpoints<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Prominent features common to the area of flight. They should be readily identified by other features, such as roads, rivers, railroad tracks, lakes, and power lines. If possible, select features that make useful boundaries or brackets on each side of the road.</p>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Dead reckoning<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Navigation solely by means of computations based on time, airspeed, distance, and direction.</p>
+</div>
+</details></section>
 <section id="radio-navigation">
 <h2>Radio navigation<a class="headerlink" href="#radio-navigation" title="Permalink to this heading">#</a></h2>
+<p>Three systems available for VFR navigation:</p>
+<ol class="arabic simple">
+<li><p>VHF Omnidirectional Range (VOR)</p></li>
+<li><p>Nondirectional Radio Beacon (NDB)</p></li>
+<li><p>Global Positioning System (GPS)</p></li>
+</ol>
+<section id="vor">
+<h3>VOR<a class="headerlink" href="#vor" title="Permalink to this heading">#</a></h3>
+<p>Present in three NAVAID flavors:</p>
+<ol class="arabic simple">
+<li><p>VOR</p></li>
+<li><p>VOR/Distance Measuring Equipment (DME)</p></li>
+<li><p>VOR/Tactical Air Navigation (TACAN) makes it a (VORTAC)</p></li>
+</ol>
+<p>VORs are VHF radio stations that project radials in all directions (line-of-sight only). These radials are referenced to magnetic north. Reception 1000 ft above the ground is generally 40-45 miles, and increases with altitude.</p>
+<p>Transmitting stations can be positively identified by their Morse code identification.</p>
+<p>Aircraft must have a receiver to use a VOR. Navigation instruments displaying VOR data include:</p>
+<ul class="simple">
+<li><p>Course deviation indicator (CDI)</p></li>
+<li><p>Horizontal situation indicator (HSI)</p></li>
+<li><p>Radio magnetic indicator (RMI)</p></li>
+</ul>
+<section id="course-deviation-indicator-cdi">
+<h4>Course deviation indicator (CDI)<a class="headerlink" href="#course-deviation-indicator-cdi" title="Permalink to this heading">#</a></h4>
+<p>Found in most training aircraft, it consists of a omnibearing selector (OBS) and a CDI needle that moves left and right to indicate the aircraft’s position relative to the selected radial, as well as a TO/FROM indicator. When the course selector is rotated, it moves the CDI or needle to indicate the position of the radial relative to the aircraft.</p>
+<p>If the course selector is rotated until the deviation needle is centered, the radial (magnetic course “FROM” the station) or its reciprocal (magnetic course “TO” the station) can be determined. The course deviation needle also moves to the right or left if the aircraft is flown or drifting away from the radial which is set in the course selector.</p>
+<p>By centering the needle, the course selector indicates either
+the course “FROM” the station or the course “TO” the station.
+If the flag displays a “TO,” the course shown on the course
+selector must be flown to the station. [Figure 16-29] If
+“FROM” is displayed and the course shown is followed, the
+aircraft is flown away from the station.</p>
+</section>
+<section id="distance-measuring-equipment-dme">
+<h4>Distance measuring equipment (DME)<a class="headerlink" href="#distance-measuring-equipment-dme" title="Permalink to this heading">#</a></h4>
+<p>DME measures in nautical miles the slant range to the aircraft.</p>
+<p>slant range distance
+The direct distance between the aircraft and the VORTAC. It is affected by altitude; station passage at an altitude of 6,076 feet AGL would show 1 NM on the DME.</p>
+</section>
+<section id="area-navigation-rnav">
+<h4>Area navigation (RNAV)<a class="headerlink" href="#area-navigation-rnav" title="Permalink to this heading">#</a></h4>
+<p>Area navigation (RNAV) permits electronic course guidance on any route between points (waypoints) established by the pilot.</p>
+<p>waypoints
+A combination of selected radial and distance points within the service volume of the VORTAC to be used.</p>
+</section>
+</section>
+<section id="non-directional-beacon-ndb">
+<h3>Non-directional beacon (NDB)<a class="headerlink" href="#non-directional-beacon-ndb" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Not affected by line-of-sight.</p></li>
+<li><p>Needle points directly to the station.</p></li>
+</ul>
+</section>
+<section id="global-positioning-system-gps">
+<h3>Global positioning system (GPS)<a class="headerlink" href="#global-positioning-system-gps" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>RNAV coverage that is worldwide in scope.</p></li>
+<li><p>Minimum of four satellites is necessary to establish an accurate three-dimensional position.</p></li>
+<li><p>The GPS receiver verifies the integrity (usability) of the signals received from the GPS constellation through receive autonomous integrity monitoring (RAIM) to determine if a satellite is providing corrupted information. At least one satellite, in addition to those required for navigation, must be in view for the receiver to perform the RAIM function; thus, RAIM needs a minimum of five satellites in view or four satellites and a barometric altimeter (baro-aiding) to detect an integrity anomaly.</p></li>
+</ul>
+</section>
 </section>
 <section id="e6-b-navlog-calculations-use">
 <h2>E6-B, navlog calculations &amp; use<a class="headerlink" href="#e6-b-navlog-calculations-use" title="Permalink to this heading">#</a></h2>
@@ -545,7 +643,10 @@ Lost procedures (4 C’s)<div class="sd-summary-down docutils">
 <li><p class="sd-card-text"><strong>Comply</strong> with all instructions.</p></li>
 </ol>
 </div>
-</details></section>
+</details><p>Guard frequency is 121.5 MHz. If a situation becomes threatening, transmit the
+situation on guard and set the transponder to 7700. Most facilities (and even
+airliners) monitor the emergency frequency.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -618,7 +719,17 @@ Lost procedures (4 C’s)<div class="sd-summary-down docutils">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airspace-obstructions-terrain">Airspace, obstructions &amp; terrain</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cruise-altitudes">Cruise altitudes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#route-selection-checkpoints-pilotage-dead-reckoning">Route selection, checkpoints, pilotage, &amp; dead reckoning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-navigation">Radio navigation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radio-navigation">Radio navigation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vor">VOR</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#course-deviation-indicator-cdi">Course deviation indicator (CDI)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#distance-measuring-equipment-dme">Distance measuring equipment (DME)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#area-navigation-rnav">Area navigation (RNAV)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#non-directional-beacon-ndb">Non-directional beacon (NDB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#global-positioning-system-gps">Global positioning system (GPS)</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e6-b-navlog-calculations-use">E6-B, navlog calculations &amp; use</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vfr-fuel-requirements">VFR fuel requirements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fss-flight-plan">FSS flight plan</a></li>
